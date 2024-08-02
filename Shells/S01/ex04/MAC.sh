@@ -1,0 +1,1 @@
+ifconfig | grep ether | sed -r 's/.*(([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})).*/\1/g'
